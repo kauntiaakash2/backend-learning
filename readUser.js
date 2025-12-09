@@ -1,0 +1,10 @@
+const readLine = require("readline-sync");
+// console.log(typeof readLine);
+const userID = readLine.question("Enter you User_ID: ");
+// console.log(typeof userID);
+if (userID == "24155154") console.log(`Welcome ${userID} to Back-End!🎉`);
+console.log("Confirm you details: ");
+const age = Number(readLine.question("Enter you age: "));
+// console.log(typeof age);
+if (age > 18) console.log(`You are IN! ${age + 10}`);
+else console.log("You cannot access the back-end!");
